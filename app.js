@@ -11,11 +11,22 @@ if (window.PaymentRequest) {
     //payment details (i.e. cost/currency)
 
     const paymentDetails = {
+        displayItems: [
+            {
+                label: "Original donation amount",
+                amount: { currency: "BRL", value: "65.00" }, // BRL$65.00
+            },
+            {
+                label: "Friends and BRL discount",
+                amount: { currency: "BRL", value: "-10.00" }, // -BRL$10.00
+                pending: true // The price is not determined yet
+            }
+        ],
         total: {
             label: 'Total Cost',
             amount: {
                 currency: 'BRL',
-                value: 0.001
+                value: 152.67
             }
         }
     }
