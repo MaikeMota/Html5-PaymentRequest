@@ -26,7 +26,7 @@ if (window.PaymentRequest) {
             label: 'Total Cost',
             amount: {
                 currency: 'BRL',
-                value: 152.67
+                value: 55
             }
         }
     }
